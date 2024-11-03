@@ -1,5 +1,14 @@
-// Browser detection for Internet Explorer 11
-var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-if (isIE11) {
-    window.location.href = 'unsupported.html'; // Redirect to the unsupported page
-}
+// browser-check.js
+(function() {
+    var isIE = false;
+
+    // Check for IE versions
+    if (window.attachEvent || (window.ActiveXObject && !window.XMLHttpRequest)) {
+        isIE = true;
+    }
+
+    // If IE, redirect to unsupported browser page
+    if (isIE) {
+        window.location.href = 'unsupported.html'; // Change to the path of your unsupported page
+    }
+})();
