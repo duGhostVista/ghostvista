@@ -1,0 +1,173 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background styling */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the glassmorphic boxes */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the box container vertically */
+    height: 100%;
+    width: 100%;
+}
+
+/* Box container styling */
+.box-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+    justify-content: center; /* Center boxes in the container */
+    gap: 20px; /* Space between boxes */
+}
+
+/* Glassmorphic box styling */
+.glass-box {
+    background: rgba(24, 4, 116, 0.356);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    width: 90%; /* Width as a percentage for responsiveness */
+    max-width: 1000px; /* Increased max width for larger screens */
+    height: auto; /* Height can adjust based on content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex; /* Added display flex for the profile section */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Profile section styling */
+.profile-section {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Take full width of the glass box */
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 100px; /* Width */
+    height: 100px; /* Height */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 20px; /* Right margin for spacing */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+/* Text content styling */
+.text-content {
+    display: flex;
+    flex-direction: column; /* Stack text elements vertically */
+    justify-content: center; /* Center text vertically */
+    text-align: left; /* Align text to the left */
+}
+
+/* Text styling */
+h1 {
+    font-size: 1.8em;
+    color: white;
+    margin: 10px 0;
+}
+
+p {
+    color: white;
+    margin: 5px 0;
+}
+
+/* About Me section */
+.about-me h2 {
+    color: white;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.about-me p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Button styling */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .glass-box {
+        padding: 20px;
+        width: 95%; /* Use a percentage for smaller screens */
+        max-width: 700px; /* Maintain max width for tablets */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .profile-section {
+        flex-direction: column; /* Stack profile picture and text vertically */
+        align-items: center; /* Center items */
+    }
+
+    .profile-pic {
+        margin-right: 0; /* Remove right margin */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Slightly smaller font for smaller screens */
+    }
+
+    p {
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    .about-me h2 {
+        font-size: 1.1em; /* Adjust font size */
+    }
+
+    .about-me p {
+        font-size: 0.8em; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em; /* Smaller font size for mobile */
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 5px; /* Reduce gap between buttons */
+    }
+
+    button {
+        width: 100%; /* Make buttons full-width */
+    }
+}
