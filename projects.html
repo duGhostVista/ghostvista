@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostVista.EXE | Projects</title>
+    <link rel="stylesheet" href="bg.css">
+    <style>
+        /* Add this style for the back button */
+        .back-button {
+            position: fixed; /* Fixes the position relative to the viewport */
+            bottom: 20px; /* Distance from the bottom */
+            left: 20px; /* Distance from the left */
+            z-index: 10; /* Ensures it stays above other content */
+        }
+
+        .back-button a {
+            text-decoration: none; /* Remove underline from the link */
+        }
+
+        .back-button button {
+            background-color: rgba(255, 255, 255, 0.3);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for animation */
+        }
+
+        .back-button button:hover {
+            background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="glass-box">
+            <h1>My Projects</h1>
+            <p>Here you can get information about my projects, current and past projects.</p>
+            <h1>Notice</h1>
+            <p>(D) Means the project has been discontinued and will not be maintained.</p>
+            <div class="about-me">
+            </div>
+            <div class="buttons">
+                <button>ToadVille Bay</button>
+                <button>GhostPad (D)</button>
+            </div>
+        </div>
+
+        <!-- Button to return to index.html positioned at the bottom left -->
+        <div class="back-button">
+            <a href="index.html">
+                <button>Back to Home</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

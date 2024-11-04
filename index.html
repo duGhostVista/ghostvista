@@ -9,11 +9,24 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Link to the favicon -->
     <title>GhostVista.EXE | Home</title> <!-- Title of the webpage -->
     <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <style>
+        /* Add CSS for the scroll animation here */
+        .animated {
+            opacity: 0; /* Start invisible */
+            transform: translateY(50px); /* Start slightly below */
+            transition: opacity 0.6s ease, transform 0.6s ease; /* Transition effect */
+        }
+
+        .animated.visible {
+            opacity: 1; /* Fully visible */
+            transform: translateY(0); /* Move to original position */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="box-container">
-            <div class="glass-box">
+            <div class="glass-box animated">
                 <div class="profile-section">
                     <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
                     <div class="text-content">
@@ -26,17 +39,23 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <button>Projects</button>
-                    <button>Discord</button> <!-- Removed the extra 's' here -->
-                    <button>YouTube</button>
+                    <a href="projects.html">
+                        <button>Projects</button>
+                    </a>
+                    <a href="https://discord.gg/qh9X9xCrnx">
+                        <button>Discord</button>
+                    </a>
+                    <a href="https://www.youtube.com/@notghostvista">
+                        <button>YouTube</button>
+                    </a>
                 </div>
             </div>
 
-            <div class="glass-box">
+            <div class="glass-box animated">
                 <div class="profile-section">
                     <img src="profile1.jpg" alt="Profile Picture" class="profile-pic">
                     <div class="text-content">
-                        <h1>GhotVista Technology</h1>
+                        <h1>GhostVista Technology</h1>
                         <p>@GhostTechz</p>
                         <div class="about-me">
                             <h2>About Me</h2>
@@ -45,14 +64,58 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <button>Contact</button>
-                    <button>Downloads</button>
-                    <button>YouTube</button>
+                    <a href="mailto:toadvillebay@gmail.com"> <!-- Link to the contact page -->
+                        <button>Contact</button>
+                    </a>
+                    <a href="downloads.html"> <!-- Link to the downloads page -->
+                        <button>Downloads</button>
+                    </a>
+                    <a href="https://www.youtube.com/@GhostTechz"> <!-- Link to the GhostTechz YouTube page -->
+                        <button>YouTube</button>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- Footer Section -->
+        <footer class="glass-box footer animated">
+            <div class="footer-content">
+                <img src="profile.jpg" alt="Footer Profile Picture" class="footer-pic"> <!-- Profile picture for footer -->
+                <div class="footer-text">
+                    <p>© 2024 GhostVista. All rights reserved.</p>
+                    <a href="mailto:toadvillebay@gmail.com">
+                        <button>Follow Me</button>
+                    </a>
+                    
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="browser-check.js"></script> <!-- Link to the external JS file -->
+    <script src="scroll.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.animated');
+
+            const handleScroll = () => {
+                animatedElements.forEach((element) => {
+                    const rect = element.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+
+                    // Check if the element is in the viewport
+                    if (rect.top < windowHeight && rect.bottom > 0) {
+                        element.classList.add('visible'); // Add the visible class to trigger animation
+                    } else {
+                        element.classList.remove('visible'); // Optionally, remove the class if out of view
+                    }
+                });
+            };
+
+            // Run on scroll and on load
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Initial check on page load
+        });
+    </script>
 </body>
 </html>
