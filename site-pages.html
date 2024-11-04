@@ -7,6 +7,17 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
+                /* Add CSS for the scroll animation here */
+        .animated {
+            opacity: 0; /* Start invisible */
+            transform: translateY(50px); /* Start slightly below */
+            transition: opacity 0.6s ease, transform 0.6s ease; /* Transition effect */
+        }
+
+        .animated.visible {
+            opacity: 1; /* Fully visible */
+            transform: translateY(0); /* Move to original position */
+        }
         /* Add this style for the back button */
         .back-button {
             position: fixed; /* Fixes the position relative to the viewport */
