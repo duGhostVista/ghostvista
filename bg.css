@@ -277,3 +277,27 @@ button:hover {
     opacity: 1; /* Fully visible */
     transform: translateY(0); /* Move to original position */
 }
+
+/* Updated CSS for the back button */
+.back-button {
+    position: fixed; /* Fixed relative to the viewport */
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    z-index: 10; /* Ensures it's above other content */
+}
+
+.back-button button {
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent white */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white; /* Ensures text color is white */
+    font-weight: bold; /* Makes the text stand out */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.back-button button:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Slightly more opaque */
+    color: black; /* Changes text color on hover */
+}
