@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Warning</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .warning-container {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .warning-icon {
+            font-size: 4rem;
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+        }
+        .warning-title {
+            font-size: 2.5rem;
+            color: #ff3e3e;
+            margin: 1rem 0;
+        }
+        .warning-message {
+            color: #e0e0e0;
+            margin: 1.5rem 0;
+            line-height: 1.6;
+        }
+        .browser-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .browser-option {
+            background: rgba(15, 15, 15, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .browser-option:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+        }
+        .browser-icon {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 1rem;
+        }
+        .browser-name {
+            color: var(--accent-blue);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        .browser-description {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+        .download-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 168, 255, 0.1);
+            border: 1px solid var(--accent-blue);
+            border-radius: 15px;
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .download-link:hover {
+            background: var(--accent-blue);
+            color: #121212;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="downloads.html" data-i18n="nav.downloads">Downloads</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <section class="glass-container">
+            <div class="warning-container">
+                <div class="warning-icon">⚠️</div>
+                <h1 class="warning-title" data-i18n="warning.title">Browser Not Supported</h1>
+                <p class="warning-message" data-i18n="warning.message">
+                    Sorry! Internet Explorer is not supported. This website uses modern features that work best with the latest browsers.
+                    Please use one of the following browsers for the best experience:
+                </p>
+                <div class="browser-list">
+                    <div class="browser-option">
+                        <svg class="browser-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <line x1="21.17" y1="8" x2="12" y2="8"></line>
+                            <line x1="3.95" y1="6.06" x2="8.54" y2="14"></line>
+                            <line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>
+                        </svg>
+                        <h3 class="browser-name">Chrome</h3>
+                        <p class="browser-description">Google's fast and secure browser</p>
+                        <a href="https://www.google.com/chrome" class="download-link" data-i18n="warning.chrome">Download</a>
+                    </div>
+                    <div class="browser-option">
+                        <svg class="browser-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <line x1="21.17" y1="8" x2="12" y2="8"></line>
+                            <line x1="3.95" y1="6.06" x2="8.54" y2="14"></line>
+                            <line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>
+                        </svg>
+                        <h3 class="browser-name">Firefox</h3>
+                        <p class="browser-description">Mozilla's privacy-focused browser</p>
+                        <a href="https://www.mozilla.org/firefox" class="download-link" data-i18n="warning.firefox">Download</a>
+                    </div>
+                    <div class="browser-option">
+                        <svg class="browser-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <line x1="21.17" y1="8" x2="12" y2="8"></line>
+                            <line x1="3.95" y1="6.06" x2="8.54" y2="14"></line>
+                            <line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>
+                        </svg>
+                        <h3 class="browser-name">Edge</h3>
+                        <p class="browser-description">Microsoft's modern browser</p>
+                        <a href="https://www.microsoft.com/edge" class="download-link" data-i18n="warning.edge">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p data-i18n="footer.copyright">2024 GhostVista. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/translator.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

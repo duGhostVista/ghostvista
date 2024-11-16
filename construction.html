@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction - GhostVista Website</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="This page is under construction - GhostVista Website">
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="GhostVista">
+    <meta property="og:title" content="Under Construction - GhostVista Website">
+    <meta property="og:description" content="This page is under construction - GhostVista Website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ghostvista.com/construction">
+    <meta property="og:image" content="favicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .construction-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            margin-top: -60px;
+        }
+
+        .construction-content {
+            background: rgba(15, 15, 15, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .construction-icon {
+            font-size: 4rem;
+            color: var(--accent-blue);
+            margin-bottom: 1.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        .construction-title {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            text-shadow: var(--text-glow-medium);
+        }
+
+        .construction-text {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: rgba(0, 168, 255, 0.1);
+            border: 1px solid var(--accent-blue);
+            border-radius: 8px;
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: var(--accent-blue);
+            color: #121212;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 168, 255, 0.3);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .construction-content {
+                padding: 2rem;
+            }
+
+            .construction-title {
+                font-size: 2rem;
+            }
+
+            .construction-text {
+                font-size: 1rem;
+            }
+
+            .construction-icon {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">GhostVista</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="downloads.html" data-i18n="nav.downloads">Downloads</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Language</button>
+                <div class="dropdown-content">
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="es">Spanish</a>
+                    <a href="#" data-lang="fr">French</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="construction-container">
+        <div class="construction-content">
+            <span class="material-icons construction-icon">construction</span>
+            <h1 class="construction-title" data-i18n="construction.title">Under Construction</h1>
+            <p class="construction-text" data-i18n="construction.message">This page is currently under development. I'm working hard to bring you something amazing! Please check back soon for updates.</p>
+            <a href="javascript:history.back()" class="back-button" data-i18n="construction.backHome">Go Back</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p class="copyright" data-i18n="footer.copyright">&copy; 2024 GhostVista. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/translator.js"></script>
+</body>
+</html>

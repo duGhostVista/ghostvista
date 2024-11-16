@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - GhostVista Website</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Download games, tools, and resources from GhostVista's collection.">
+    <meta name="keywords" content="GhostVista, downloads, games, tools, resources">
+    <meta name="author" content="GhostVista">
+    <meta property="og:title" content="GhostVista Downloads">
+    <meta property="og:description" content="Download games, tools, and resources from GhostVista's collection.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ghostvista.com/downloads">
+    <meta property="og:image" content="favicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+        // Browser detection
+        function isIE() {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE "); // IE 10 or older
+            var trident = ua.indexOf("Trident/"); // IE 11
+
+            return (msie > -1) || (trident > -1);
+        }
+
+        // Redirect if IE
+        if (isIE()) {
+            window.location.href = "browser-warning.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="background"></div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="construction.html">Downloads</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <section class="glass-container">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Downloads <span>Get Your Resources!</span></h1>
+                    <p>Browse through our collection of premium downloads.</p>
+                    <a href="#featured-downloads" class="hero-button">View Downloads</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-downloads" class="solid-section">
+            <div class="download-section">
+                <h2>Featured Downloads</h2>
+                <div class="download-grid">
+                    <div class="download-item">
+                        <h3>The ToadVille Bay Flag Wallpaper</h3>
+                        <p>The flag of ToadVille Bay that can be used as a wallpaper or just anything, but please use it appropriately!</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                    <div class="download-item">
+                        <h3>VS Code</h3>
+                        <p>A popular code editor.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                    <div class="download-item">
+                        <h3>Windscruf</h3>
+                        <p>Just like VS Code, but with an AI Intergation built in.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solid-section alt-section">
+            <div class="download-section">
+                <h2>Software & Tools</h2>
+                <div class="download-grid">
+                    <div class="download-item">
+                        <h3>OBS Studio</h3>
+                        <p>Record and stream live video and audio.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                    <div class="download-item">
+                        <h3>DaVinci Resolve</h3>
+                        <p>Professional video editing suite.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                    <div class="download-item">
+                        <h3>Audacity</h3>
+                        <p>Advanced audio editing software.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solid-section">
+            <div class="download-section">
+                <h2>Operating Systems</h2>
+                <div class="download-grid">
+                    <div class="download-item">
+                        <h3>Windows 10</h3>
+                        <p>A previous version of Windows released in 2015.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                    <div class="download-item">
+                        <h3>Windows 8.x</h3>
+                        <p>A unpopular version of Windows released 2012 and 2013.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                    <div class="download-item">
+                        <h3>Windows 7</h3>
+                        <p>A previous version of Windows released in 2009.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solid-section alt-section">
+            <div class="download-section">
+                <h2>Others</h2>
+                <div class="download-grid">
+                    <div class="download-item">
+                        <h3>Steam</h3>
+                        <p>A popular video game distribution platform.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                    <div class="download-item">
+                        <h3>7-Zip</h3>
+                        <p>A popular file compression and extraction tools.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                    <div class="download-item">
+                        <h3>VLC Media Player</h3>
+                        <p>Video and audio player.</p>
+                        <a href="#" class="download-button">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 GhostVista. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

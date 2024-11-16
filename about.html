@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - GhostVista Website</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Learn more about GhostVista, my projects, and passions. Discover my journey and achievements.">
+    <meta name="keywords" content="GhostVista, developer, portfolio, projects, about">
+    <meta name="author" content="GhostVista">
+    <meta property="og:title" content="About GhostVista">
+    <meta property="og:description" content="Learn more about GhostVista, my projects, and passions. Discover my journey and achievements.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ghostvista.com/about">
+    <meta property="og:image" content="favicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="construction.html" data-i18n="nav.downloads">Downloads</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <section class="glass-container">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 data-i18n="about.title">About Me</h1>
+                    <h2 style="color: #00a8ff; margin-top: 0.5rem; font-size: 1.5rem;">Developer - Gamer</h2>
+                    <p style="margin: 1.5rem 0; line-height: 1.6;" data-i18n="about.subtitle">Hi, I'm GhostVista! I'm a developer and a gamer. I love to code and play video games. I am a Mexican American YouTuber who was born on May 29 2009, currently lives in the United States of America. I am autisitc so yeah!</p>
+                    <div class="hero-buttons">
+                        <a href="https://github.com/GhostVista" class="hero-button">GitHub</a>
+                        <a href="#projects" class="hero-button scroll-button">My Projects</a>
+                    </div>
+                </div>
+                <img src="profile.png" alt="Profile" class="profile-image scroll-reveal fade-left">
+            </div>
+        </section>
+
+        <section id="projects" class="solid-section">
+            <div style="margin: 2rem 0;">
+                <h2 data-i18n="about.projects.title">My Projects</h2>
+                <p data-i18n="about.projects.description">Check out some of my cool projects and achievements!</p>
+            </div>
+        </section>
+
+        <section class="solid-section">
+            <div class="cards-grid" style="margin: 2rem 0;">
+                <div class="project-box scroll-reveal fade-up">
+                    <h3 data-i18n="about.website.title">Website Development</h3>
+                    <p data-i18n="about.website.description">I create modern, responsive websites using HTML, CSS, and JavaScript. My focus is on clean design and user experience.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/GhostVista" class="project-button" data-i18n="about.website.button">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-box scroll-reveal fade-up">
+                    <h3 data-i18n="about.youtube.title">YouTube Channel</h3>
+                    <p data-i18n="about.youtube.description">I create content about gaming, technology, and my journey as a developer. Join me on my adventures!</p>
+                    <div class="project-buttons">
+                        <a href="https://www.youtube.com/@notghostvista" class="project-button" target="_blank" data-i18n="about.youtube.button">Visit Channel</a>
+                        <a href="https://www.youtube.com/@GhostTechz" class="project-button" target="_blank" data-i18n="about.youtube.button">Tech Channel</a>
+                    </div>
+                </div>
+
+                <div class="project-box scroll-reveal fade-up">
+                    <h3 data-i18n="about.toadville.title">ToadVille Bay</h3>
+                    <p data-i18n="about.toadville.description">Upcoming Video Game!</p>
+                    <div class="project-buttons">
+                        <a href="construction.html" class="project-button" data-i18n="about.toadville.button">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p data-i18n="footer.copyright">&copy; 2024 GhostVista. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/translator.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

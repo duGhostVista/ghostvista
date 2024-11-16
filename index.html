@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">GhostVista - Personal Website</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Welcome to GhostVista's personal website. Explore my projects, downloads, and join our Discord community.">
+    <meta name="keywords" content="GhostVista, gaming, development, portfolio, downloads">
+    <meta name="author" content="GhostVista">
+    <meta property="og:title" content="GhostVista - Personal Website">
+    <meta property="og:description" content="Welcome to GhostVista's personal website. Explore my projects, downloads, and join our Discord community.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ghostvista.com">
+    <meta property="og:image" content="favicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+        // Browser detection
+        function isIE() {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE "); // IE 10 or older
+            var trident = ua.indexOf("Trident/"); // IE 11
+
+            return (msie > -1) || (trident > -1);
+        }
+
+        // Redirect if IE
+        if (isIE()) {
+            window.location.href = "browser-warning.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="background"></div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="construction.html" data-i18n="nav.downloads">Downloads</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <section class="glass-container">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 data-i18n="hero.welcome">Welcome to GhostVista Website! <span>Portfolio and Downloads!</span></h1>
+                    <div class="hero-buttons">
+                        <a href="about.html" class="hero-button" data-i18n="hero.about">About Me!</a>
+                        <a href="#features" class="hero-button scroll-button" data-i18n="hero.features">View Features</a>
+                    </div>
+                </div>
+                <img src="profile.png" alt="Profile" class="profile-image scroll-reveal fade-left">
+            </div>
+        </section>
+
+        <section id="features" class="solid-section">
+            <div style="margin: 2rem 0;">
+                <h2 data-i18n="features.title">Website Features</h2>
+                <p data-i18n="features.description">We offer downloads for various tools and resources, and just a little bit more like a Portfolio?</p>
+            </div>
+        </section>
+
+        <section class="solid-section">
+            <div class="cards-grid">
+                <div class="card scroll-reveal fade-up" style="--delay: 0.1s">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="cards.downloads.title">Downloads</h3>
+                    <p data-i18n="cards.downloads.description">Download my games and other content.</p>
+                    <div class="project-buttons">
+                        <a href="construction.html" class="project-button" data-i18n="cards.downloads.button">View Downloads</a>
+                    </div>
+                </div>
+
+                <div class="card scroll-reveal fade-up" style="--delay: 0.2s">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="cards.discord.title">Discord Server</h3>
+                    <p data-i18n="cards.discord.description">Join my Discord server to chat and stay updated.</p>
+                    <div class="project-buttons">
+                        <a href="https://discord.gg/your-invite-here" class="project-button" data-i18n="cards.discord.button">Join Server</a>
+                    </div>
+                </div>
+
+                <div class="card scroll-reveal fade-up" style="--delay: 0.3s">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="cards.portfolio.title">Portfolio</h3>
+                    <p data-i18n="cards.portfolio.description">View my Portfolio to see some stuff about me, including my projects.</p>
+                    <div class="project-buttons">
+                        <a href="about.html" class="project-button" data-i18n="cards.portfolio.button">View Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p data-i18n="footer.copyright">&copy; 2024 GhostVista. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="js/translations.js"></script>
+        <script src="js/translator.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
