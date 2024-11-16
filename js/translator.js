@@ -2,7 +2,7 @@ class Translator {
     constructor() {
         this.currentLang = localStorage.getItem('language') || 'en';
         this.flags = {
-            en: '🇺🇸',
+            en: '🇬🇧',
             es: '🇲🇽',
             fr: '🇫🇷'
         };
